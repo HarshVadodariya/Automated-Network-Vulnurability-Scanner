@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<nmaprun scanner="nmap" args="nmap -sV -oX - 10.0.0.5" start="1790000000" version="7.94SVN">
+<host><status state="up" reason="syn-ack"/>
+<address addr="10.0.0.5" addrtype="ipv4"/>
+<hostnames><hostname name="web01.lab.local" type="PTR"/></hostnames>
+<ports>
+<port protocol="tcp" portid="22"><state state="open"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open"/><service name="http" product="Apache httpd" version="2.4.49" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.49</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open"/><service name="mysql" product="Weird &lt;b&gt;DB&lt;/b&gt;" version="5.1 caf&#233;" method="probed" conf="8"></service></port>
+<port protocol="tcp" portid="9999"><state state="open"/><service name="abyss" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed"/></port>
+</ports>
+<os><osmatch name="Linux 5.4" accuracy="95"/></os>
+</host>
+<host><status state="down"/><address addr="10.0.0.9" addrtype="ipv4"/></host>
+<runstats><finished time="1790000100"/></runstats>
+</nmaprun>
